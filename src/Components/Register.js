@@ -17,7 +17,7 @@ function Register() {
 
                     <div className="modal-body">
 
-                        <form className="register-form webform" role="form">
+                        <form method="post" className="register-form webform" role="form">
                             <label htmlFor="username-input">Username</label>
                             <input type="text" className="form-control" name="user" placeholder="JohnDoe" id="username-input" />
 

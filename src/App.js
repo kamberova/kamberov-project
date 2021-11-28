@@ -1,12 +1,14 @@
-import Header from "./Components/Header";
+import React from "react";
+
+import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Coaching from "./Components/Coaching";
 import BookASession from "./Components/BookASession";
 import Contacts from "./Components/Contacts";
 import Register from "./Components/Register";
-import Login from "./Components/Login";
-import Navigation from "./Components/Navigation";
+import LoginForm from "./Components/LoginForm";
+import Header from "./Components/Header";
 
 
 function App() {
@@ -14,9 +16,8 @@ function App() {
   return (
     <div>
 
-      <Navigation />
-
       <Header />
+      <Home />
 
       <About />
 
@@ -27,9 +28,10 @@ function App() {
       <Contacts />
 
       <Footer />
-      
-      <Login />
+
+      <LoginForm />
       <Register />
+
     </div>
   );
 }

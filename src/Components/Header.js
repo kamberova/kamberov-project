@@ -1,71 +1,78 @@
+// import { Route, Switch, Redirect } from 'react-router-dom';
+
+import Login from './Login';
+
 function Header() {
 
-    return (
+  return (
+    <header>
+      <main id="main-content">
+        <nav className="navbar navbar-expand-lg fixed-top">
+          <div className="container">
 
-        <header>
+            <a className="navbar-brand" href="/">Radoslav Kamberov</a>
 
-            <section className="hero d-flex flex-column justify-content-center align-items-center" id="home">
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
 
-                <div className="bg-overlay"></div>
+            <div className="collapse navbar-collapse" id="navbarNav">
 
-                <div className="container">
-                    <div className="row">
+              <ul className="navbar-nav ml-lg-auto">
+                <li className="nav-item">
+                  <a href="#home" className="nav-link smoothScroll">Home</a>
+                </li>
 
-                        <div className="col-lg-8 col-md-10 mx-auto col-12">
-                            <div className="hero-text mt-5 text-center">
+                <li className="nav-item">
+                  <a href="#about" className="nav-link smoothScroll">About Me</a>
+                </li>
 
-                                <h1 className="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your table tennis skills with me!</h1>
+                <li className="nav-item">
+                  <a href="#coaching" className="nav-link smoothScroll">Coaching</a>
+                </li>
 
-                                <a href="#feature" className="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>
+                <li className="nav-item">
+                  <a href="#book-a-session" className="nav-link smoothScroll">Book a session</a>
+                </li>
 
-                                <a href="#about" className="btn custom-btn  mt-3" data-aos="fade-up" data-aos-delay="700">Learn more</a>
+                <li className="nav-item">
+                  <a href="#contact" className="nav-link smoothScroll">Contacts</a>
+                </li>
 
-                            </div>
-                        </div>
+                <li className="nav-item">
+                  <a href="/loginForm" className="nav-link smoothScroll">Log In</a>
+                </li>
 
-                    </div>
-                </div>
-            </section>
+                <li className="nav-item">
+                  <a href="/registerForm" className="nav-link smoothScroll">Register</a>
+                </li>
 
-
-            <section className="feature" id="feature">
-                <div className="container">
-                    <div className="row">
-
-                        <div className="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
-                            <p data-aos="fade-up" data-aos-delay="200">Already have an account?</p>
-                            <a href="#" className="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#loginForm">Login</a>
-
-                            <p data-aos="fade-up" data-aos-delay="200">Are you new to my page?</p>
-                            <a href="#" className="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#registerForm">Create an account</a>
-                        </div>
-
-                        <div className="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
-                            <div className="about-working-hours">
-                                <div>
-
-                                    <h2 className="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Working hours</h2>
-
-                                    <strong className="d-block" data-aos="fade-up" data-aos-delay="600">Sunday: Closed</strong>
-
-                                    <strong className="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Monday - Friday</strong>
-
-                                    <p data-aos="fade-up" data-aos-delay="800">7: 00 AM - 10: 00 PM</p>
-
-                                    <strong className="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Saturday</strong>
-
-                                    <p data-aos="fade-up" data-aos-delay="800">6: 00 AM - 4: 00 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <li className="nav-item">
+                  <a href="/logout" className="nav-link smoothScroll">Logout</a>
+                </li>
 
 
-            </section >
-        </header>
+              </ul>
 
-    )
+              <ul className="social-icon ml-lg-3">
+                <li>
+                  <a href="https://www.facebook.com/kamberov" className="fa fa-facebook"></a>
+                </li>
+                <li>
+                  <a href="#" className="fa fa-twitter"></a>
+                </li>
+                <li>
+                  <a href="#" className="fa fa-instagram"></a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </nav>
+      </main>
+    </header>
+  )
 }
 
 export default Header;
