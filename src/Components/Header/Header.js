@@ -1,6 +1,5 @@
 // import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Login from './Login';
 
 function Header() {
 
@@ -41,7 +40,7 @@ function Header() {
                 </li>
 
                 <li className="nav-item">
-                  <a href="/loginForm" className="nav-link smoothScroll">Log In</a>
+                  <a href="/loginForm" className="nav-link smoothScroll">Login</a>
                 </li>
 
                 <li className="nav-item">

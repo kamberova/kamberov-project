@@ -17,6 +17,7 @@ function Register() {
 
                     <div className="modal-body">
 
+                        {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
                         <form method="post" className="register-form webform" role="form">
                             <label htmlFor="username-input">Username</label>
                             <input type="text" className="form-control" name="user" placeholder="JohnDoe" id="username-input" />
@@ -34,7 +35,7 @@ function Register() {
 
                             <div className="custom-control custom-checkbox">
                                 <input type="checkbox" className="custom-control-input" id="signup-agree" />
-                                <label className="custom-control-label text-small text-muted" htmlFor="signup-agree">I agree to the <a href="#">Terms &amp; Conditions</a>
+                                <label className="custom-control-label text-small text-muted" htmlFor="signup-agree">I agree to the <a href="/">Terms &amp; Conditions</a>
                                 </label>
                             </div>
                         </form>
