@@ -1,15 +1,15 @@
 import React from "react";
 
-import Home from "./Components/Home";
-import Footer from "./Components/Footer";
-import About from "./Components/About";
-import Coaching from "./Components/Coaching";
-import BookASession from "./Components/BookASession";
-import Contacts from "./Components/Contacts";
-import Register from "./Components/Register";
-import LoginForm from "./Components/LoginForm";
-import Header from "./Components/Header";
-
+import Home from "./Components/Home/Home";
+import Footer from "./Components/Footer/Footer";
+import About from "./Components/About/About";
+import Coaching from "./Components/Coaching/Coaching";
+import BookASession from "./Components/BookASession/BookASession";
+import Contacts from "./Components/Contacts/Contacts";
+import Register from "./Components/Register/Register";
+import LoginForm from "./Components/Login/LoginForm";
+import Header from "./Components/Header/Header";
+import Login from "./Components/Login/Login";
 
 function App() {
 
@@ -17,21 +17,30 @@ function App() {
     <div>
 
       <Header />
-      <Home />
 
-      <About />
+      <main id="site-content">
 
-      <Coaching />
+        <Home />
 
-      <BookASession />
+        <About />
 
-      <Contacts />
+        <Coaching />
 
-      <Footer />
+        <BookASession />
 
-      <LoginForm />
-      <Register />
+        <Contacts />
 
+        <Login />
+
+        <Register />
+
+        <Footer />
+
+        <LoginForm />
+        <Register />
+
+      </main>
+      
     </div>
   );
 }
