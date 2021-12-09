@@ -7,8 +7,9 @@ function Contacts() {
         <div className="row">
 
           <div className="ml-auto col-lg-5 col-md-6 col-12">
-            <h2 className="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
+            <h2 className="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to contact me</h2>
 
+            {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
             <form  method="post" className="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
               <input type="text" className="form-control" name="cf-name" placeholder="Name" />
 

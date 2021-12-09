@@ -16,7 +16,7 @@ function About() {
 
                     <div className="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
                         <div className="team-thumb">
-                            <img src="/images/team/team-image.jpg" className="img-fluid" alt="Trainer" />
+                            <img src="/images/team/trainer.jpg" className="img-fluid" alt="Trainer" />
 
                             <div className="team-info d-flex flex-column">
 

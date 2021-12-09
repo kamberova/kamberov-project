@@ -56,14 +56,15 @@ function Header() {
 
               <ul className="social-icon ml-lg-3">
                 <li>
+                   {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
                   <a href="https://www.facebook.com/kamberov" className="fa fa-facebook"></a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="fa fa-twitter"></a>
                 </li>
                 <li>
                   <a href="#" className="fa fa-instagram"></a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
