@@ -2,7 +2,7 @@ function About() {
 
     return (
 
-        <section href="about" className="about section" id="about">
+        <section href="/about" className="about section" id="about">
             <div className="container">
                 <div className="row">
 
@@ -25,9 +25,10 @@ function About() {
 
                                 <ul className="social-icon mt-3">
                                
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
                                     <li><a href= "https://www.facebook.com/kamberov" className="fa fa-facebook"></a></li>
-                                    <li><a href="#" className="fa fa-twitter"></a></li>
-                                    <li><a href="#" className="fa fa-instagram"></a></li>
+                                    {/* <li><a href="#" className="fa fa-twitter"></a></li>
+                                    <li><a href="#" className="fa fa-instagram"></a></li> */}
                                 </ul>
                             </div>
                         </div>

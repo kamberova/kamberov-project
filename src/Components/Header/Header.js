@@ -1,11 +1,11 @@
 // import { Route, Switch, Redirect } from 'react-router-dom';
-
+// import {Link} from 'react-router-dom';
 
 function Header() {
 
   return (
     <header>
-      <main id="main-content">
+      {/* <main id="main-content"> */}
         <nav className="navbar navbar-expand-lg fixed-top">
           <div className="container">
 
@@ -20,31 +20,31 @@ function Header() {
 
               <ul className="navbar-nav ml-lg-auto">
                 <li className="nav-item">
-                  <a href="#home" className="nav-link smoothScroll">Home</a>
+                  <a href="/" className="nav-link smoothScroll">Home</a>
                 </li>
 
                 <li className="nav-item">
-                  <a href="#about" className="nav-link smoothScroll">About Me</a>
+                  <a href="/about" className="nav-link smoothScroll">About Me</a>
                 </li>
 
                 <li className="nav-item">
-                  <a href="#coaching" className="nav-link smoothScroll">Coaching</a>
+                  <a href="/coaching" className="nav-link smoothScroll">Coaching</a>
                 </li>
 
                 <li className="nav-item">
-                  <a href="#book-a-session" className="nav-link smoothScroll">Book a session</a>
+                  <a href="/book-a-session" className="nav-link smoothScroll">Book a session</a>
                 </li>
 
                 <li className="nav-item">
-                  <a href="#contact" className="nav-link smoothScroll">Contacts</a>
+                  <a href="/contacts" className="nav-link smoothScroll">Contacts</a>
                 </li>
 
                 <li className="nav-item">
-                  <a href="/loginForm" className="nav-link smoothScroll">Login</a>
+                  <a href="/login" className="nav-link smoothScroll">Login</a>
                 </li>
 
                 <li className="nav-item">
-                  <a href="/registerForm" className="nav-link smoothScroll">Register</a>
+                  <a href="/register" className="nav-link smoothScroll">Register</a>
                 </li>
 
                 <li className="nav-item">
@@ -70,7 +70,7 @@ function Header() {
 
           </div>
         </nav>
-      </main>
+      {/* </main> */}
     </header>
   )
 }

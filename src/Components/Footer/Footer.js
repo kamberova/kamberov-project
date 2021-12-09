@@ -6,18 +6,18 @@ function Footer() {
                 <div className="row">
 
                     <div className="ml-auto col-lg-4 col-md-5">
-                        <p className="copyright-text">Copyright &copy; 2020 Gymso Fitness Co.
+                        {/* <p className="copyright-text">Copyright &copy; 2020 Gymso Fitness Co. */}
 
-                            <br />Design: <a href="https://www.tooplate.com">Tooplate</a></p>
+                            {/* <br />Design: <a href="https://www.tooplate.com">Tooplate</a></p> */}
                     </div>
 
                     <div className="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
                         <p className="mr-4">
                             <i className="fa fa-envelope-o mr-1"></i>
-                            <a href="#">kambera@abv.bg</a>
+                            <a href="/contacts">kambera@abv.bg</a>
                         </p>
 
-                        <p><i className="fa fa-phone mr-1"></i> 010-020-0840</p>
+                        <p><i className="fa fa-phone mr-1"></i> +359 888 92 16 92</p>
                     </div>
 
                 </div>

@@ -1,4 +1,5 @@
-import {} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
 
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
@@ -7,9 +8,8 @@ import Coaching from "./Components/Coaching/Coaching";
 import BookASession from "./Components/BookASession/BookASession";
 import Contacts from "./Components/Contacts/Contacts";
 import Register from "./Components/Register/Register";
-import LoginForm from "./Components/Login/LoginForm";
-import Header from "./Components/Header/Header";
 import Login from "./Components/Login/Login";
+import Header from "./Components/Header/Header";
 
 function App() {
 
@@ -20,27 +20,26 @@ function App() {
 
       <main id="site-content">
 
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <About />
+          <Route path="/about" element={<About />} />
 
-        <Coaching />
+          <Route path="/coaching" element={<Coaching />} />
 
-        <BookASession />
+          <Route path="/book-a-session" element={<BookASession />} />
 
-        <Contacts />
+          <Route path="/contacts" element={<Contacts />} />
 
-        <Login />
+          <Route path="/login" element={<Login />} />
 
-        <Register />
+          <Route path="/register" element={<Register />} />
 
-        <Footer />
-
-        <LoginForm />
-        <Register />
+        </Routes>
 
       </main>
-      
+      <Footer />
+
     </div>
   );
 }

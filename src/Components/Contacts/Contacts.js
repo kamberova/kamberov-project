@@ -2,7 +2,7 @@ function Contacts() {
 
   return (
 
-    <section href="/contact" className="contact section" id="contact">
+    <section href="/contacts" className="contact section" id="contact">
       <div className="container">
         <div className="row">
 

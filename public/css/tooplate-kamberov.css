@@ -185,7 +185,7 @@
     box-sizing: border-box;
   }
 
-  a {
+  a Link {
     color: var(--link-color);
     font-weight: normal;
     text-decoration: none;
@@ -231,10 +231,10 @@
     padding: 1px;
   }
 
-  .register-form a {
+  .register-form a Link{
     color: var(--primary-color);
   }
-  .login-form a {
+  .login-form a Link {
     color: var(--primary-color);
   }
 
@@ -284,7 +284,7 @@
     color: var(--primary-color);
   }
 
-  .navbar .social-icon li a {
+  .navbar .social-icon li a Link {
     color: var(--white-color);
   }
 
@@ -573,7 +573,7 @@
     padding: 3rem 0;
   }
 
-  .site-footer a {
+  .site-footer a, Link{
     color: var(--p-color);
     font-weight: var(--font-weight-light);
   }
@@ -603,7 +603,7 @@
     list-style: none;
   }
 
-  .social-icon li a {
+  .social-icon li a, Link{
     text-decoration: none;
     display: inline-block;
     color: var(--p-color);

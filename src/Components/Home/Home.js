@@ -17,7 +17,7 @@ function Home() {
 
                                 <a href="#feature" className="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>
 
-                                <a href="#about" className="btn custom-btn  mt-3" data-aos="fade-up" data-aos-delay="700">Learn more</a>
+                                <a href="/about" className="btn custom-btn  mt-3" data-aos="fade-up" data-aos-delay="700">Learn more</a>
 
                             </div>
                         </div>
