@@ -185,7 +185,7 @@
     box-sizing: border-box;
   }
 
-  a Link {
+  a {
     color: var(--link-color);
     font-weight: normal;
     text-decoration: none;
@@ -231,13 +231,11 @@
     padding: 1px;
   }
 
-  .register-form a Link{
+  .membership-form {
+   margin-top: 4rem;
     color: var(--primary-color);
   }
-  .login-form a Link {
-    color: var(--primary-color);
-  }
-
+ 
   /*---------------------------------------
     FEATURE          
   -----------------------------------------*/
@@ -284,7 +282,7 @@
     color: var(--primary-color);
   }
 
-  .navbar .social-icon li a Link {
+  .navbar .social-icon li a {
     color: var(--white-color);
   }
 
@@ -555,12 +553,13 @@
 
   .google-map {
     border-top: 1px solid #efebeb;
-    margin-top: 2.5rem;
-    padding-top: 2.5rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
   }
 
   .google-map iframe {
-    width: 100%;
+    width: 70%;
+    height: 70%;
   }
 
 
@@ -573,7 +572,7 @@
     padding: 3rem 0;
   }
 
-  .site-footer a, Link{
+  .site-footer a {
     color: var(--p-color);
     font-weight: var(--font-weight-light);
   }
@@ -603,7 +602,7 @@
     list-style: none;
   }
 
-  .social-icon li a, Link{
+  .social-icon li a {
     text-decoration: none;
     display: inline-block;
     color: var(--p-color);

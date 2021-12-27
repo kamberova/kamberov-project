@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
-
+import { AuthProvider } from './contexts/AuthContext';
+import { NotificationProvider } from './contexts/NotificationContext'
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
@@ -9,38 +10,60 @@ import BookASession from "./Components/BookASession/BookASession";
 import Contacts from "./Components/Contacts/Contacts";
 import Register from "./Components/Register/Register";
 import Login from "./Components/Login/Login";
+import MySessions from "./Components/MySessions/MySessions";
+import Logout from "./Components/Logout";
 import Header from "./Components/Header/Header";
+import Notification from './Components/Common/Notification';
+import ErrorBoundary from './Components/Common/ErrorBoundary';
+// import PrivateRoute from './components/Common/PrivateRoute';
+// import GuardedRoute from './components/Common/GuardedRoute';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
 
   return (
-    <div>
+    <ErrorBoundary>
+      <AuthProvider>
+        <NotificationProvider>
+          <div id="container">
 
-      <Header />
+            <Header />
 
-      <main id="site-content">
+            <Notification />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
+            <main id="site-content">
 
-          <Route path="/about" element={<About />} />
+              <Routes>
+                <Route path="/" element={<Home />} />
 
-          <Route path="/coaching" element={<Coaching />} />
+                <Route path="/about" element={<About />} />
 
-          <Route path="/book-a-session" element={<BookASession />} />
+                <Route path="/coaching" element={<Coaching />} />
 
-          <Route path="/contacts" element={<Contacts />} />
+                <Route path="/book-a-session" element={<BookASession />} />
 
-          <Route path="/login" element={<Login />} />
+                <Route path="/contacts" element={<Contacts />} />
 
-          <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
 
-        </Routes>
+                <Route path="/my-sessions" element={<MySessions />} />
 
-      </main>
-      <Footer />
+                <Route path="/register" element={<Register />} />
 
-    </div>
+                <Route path="/logout" element={<Logout />} />
+
+              </Routes>
+
+            </main>
+
+            <Footer />
+
+          </div>
+        </NotificationProvider>
+      </AuthProvider>
+    </ErrorBoundary >
   );
 }
 

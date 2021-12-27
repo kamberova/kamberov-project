@@ -7,7 +7,7 @@ function About() {
                 <div className="row">
 
                     <div className="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
-                        <h2 className="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, I am Radoslav Kamberov</h2>
+                        <h2 className="mb-4" data-aos="fade-up" data-aos-delay="300">Your Booked Sessions</h2>
 
                         <p data-aos="fade-up" data-aos-delay="400">I am a sertified personal trainer, kids trainer, sparing partner. I manage also table-tennis team buildings and showcases on firm/company requests.</p>
 

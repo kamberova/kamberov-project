@@ -7,9 +7,9 @@ function BookASession() {
                 <div className="row">
 
                     <div className="col-lg-12 col-12 text-center">
-                        <h6 data-aos="fade-up">our weekly GYM schedules</h6>
+                        <h6 data-aos="fade-up">My weekly schedule</h6>
 
-                        <h2 className="text-white" data-aos="fade-up" data-aos-delay="200">Workout Timetable</h2>
+                        <h2 className="text-white" data-aos="fade-up" data-aos-delay="200">Trainings Timetable</h2>
                     </div>
 
                     <div className="col-lg-12 py-5 col-md-12 col-12">
@@ -29,17 +29,17 @@ function BookASession() {
                                 <tr>
                                     <td><small>7:00 am</small></td>
                                     <td>
-                                        <strong>Cardio</strong>
+                                        <strong>Personal Trainig</strong>
                                         <span>7:00 am - 9:00 am</span>
                                     </td>
                                     <td>
-                                        <strong>Power Fitness</strong>
+                                        <strong>Team building session</strong>
                                         <span>7:00 am - 9:00 am</span>
                                     </td>
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        <strong>Yoga Section</strong>
+                                        <strong>Kids Training</strong>
                                         <span>7:00 am - 9:00 am</span>
                                     </td>
                                 </tr>
@@ -49,16 +49,16 @@ function BookASession() {
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        <strong>Boxing</strong>
+                                        <strong>Personal Trainig</strong>
                                         <span>8:00 am - 9:00 am</span>
                                     </td>
                                     <td>
-                                        <strong>Areobic</strong>
+                                        <strong>Team building session</strong>
                                         <span>8:00 am - 9:00 am</span>
                                     </td>
                                     <td></td>
                                     <td>
-                                        <strong>Cardio</strong>
+                                        <strong>Showcase</strong>
                                         <span>8:00 am - 9:00 am</span>
                                     </td>
                                 </tr>
@@ -67,16 +67,16 @@ function BookASession() {
                                     <td><small>11:00 am</small></td>
                                     <td></td>
                                     <td>
-                                        <strong>Boxing</strong>
+                                        <strong>Personal Trainig</strong>
                                         <span>11:00 am - 2:00 pm</span>
                                     </td>
                                     <td>
-                                        <strong>Areobic</strong>
+                                        <strong>Team building session</strong>
                                         <span>11:30 am - 3:30 pm</span>
                                     </td>
                                     <td></td>
                                     <td>
-                                        <strong>Body work</strong>
+                                        <strong>Kids Training</strong>
                                         <span>11:50 am - 5:20 pm</span>
                                     </td>
                                 </tr>
@@ -84,21 +84,21 @@ function BookASession() {
                                 <tr>
                                     <td><small>2:00 pm</small></td>
                                     <td>
-                                        <strong>Boxing</strong>
+                                        <strong>Personal Trainig</strong>
                                         <span>2:00 pm - 4:00 pm</span>
                                     </td>
                                     <td>
-                                        <strong>Power lifting</strong>
+                                        <strong>Team building session</strong>
                                         <span>3:00 pm - 6:00 pm</span>
                                     </td>
                                     <td></td>
                                     <td>
-                                        <strong>Cardio</strong>
+                                        <strong>Kids Training</strong>
                                         <span>6:00 pm - 9:00 pm</span>
                                     </td>
                                     <td></td>
                                     <td>
-                                        <strong>Crossfit</strong>
+                                        <strong>Showcase</strong>
                                         <span>5:00 pm - 7:00 pm</span>
                                     </td>
                                 </tr>
