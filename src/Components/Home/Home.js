@@ -1,5 +1,25 @@
+// import { useState, useEffect } from 'react';
+
+// import * as bookService from '../../services/bookService';
+
 
 function Home() {
+
+    // const [setBooking] = useState([]);
+
+    // useEffect(() => {
+    //     bookService.getAll()
+    //         .then(result => {
+    //             setBooking(result);
+    //         })
+    //         .catch(err => {
+    //             console.log(err);
+    //         })
+    // }, [setBooking]);
+
+
+
+
 
     return (
 

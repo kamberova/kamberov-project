@@ -2,6 +2,7 @@
 // import { Link } from 'react-router-dom';
 import { useAuthContext } from "../../contexts/AuthContext";
 
+
 function Header() {
   const { user } = useAuthContext();
 
@@ -10,11 +11,11 @@ function Header() {
       <ul className="navbar-nav ml-lg-auto">
 
         <li className="nav-item">
-          <a href="/" className="nav-link smoothScroll">Home</a>
+          <a href="/about" className="nav-link smoothScroll">About Me</a>
         </li>
 
         <li className="nav-item">
-          <a href="/about" className="nav-link smoothScroll">About Me</a>
+          <a href="/coaching" className="nav-link smoothScroll">Coaching</a>
         </li>
 
         <li className="nav-item">
@@ -36,8 +37,9 @@ function Header() {
 
   let userNavigation = (
     <div id="user">
-      <span>Welcome, {user.email}</span>
+      <span className="text-white">Welcome, {user.email}</span>
       <ul className="navbar-nav ml-lg-auto">
+
         <li className="nav-item">
           <a href="/coaching" className="nav-link smoothScroll">Coaching</a>
         </li>
@@ -48,6 +50,11 @@ function Header() {
 
         <li className="nav-item">
           <a href="/my-sessions" className="nav-link smoothScroll">My Sessions</a>
+        </li>
+
+        
+        <li className="nav-item">
+          <a href="/contacts" className="nav-link smoothScroll">Contacts</a>
         </li>
 
         <li className="nav-item">
@@ -65,7 +72,7 @@ function Header() {
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
 
-          <a className="navbar-brand" href="/">Radoslav Kamberov</a>
+          <a className="navbar-brand" href="/">Home</a>
 
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -74,6 +81,8 @@ function Header() {
 
           <div className="collapse navbar-collapse" id="navbarNav">
 
+
+
             <ul className="navbar-nav ml-lg-auto">
 
               {user.email
@@ -81,44 +90,9 @@ function Header() {
                 : guestNavigation
               }
 
-              {/* <li className="nav-item">
-                <a href="/" className="nav-link smoothScroll">Home</a>
-              </li> */}
-
-              {/* <li className="nav-item">
-                <a href="/about" className="nav-link smoothScroll">About Me</a>
-              </li> */}
-
-              {/* <li className="nav-item">
-                <a href="/coaching" className="nav-link smoothScroll">Coaching</a>
-              </li> */}
-
-              {/* <li className="nav-item">
-                <a href="/book-a-session" className="nav-link smoothScroll">Book a session</a>
-              </li> */}
-
-              {/* <li className="nav-item">
-                <a href="/my-sessions" className="nav-link smoothScroll">My Sessions</a>
-              </li> */}
-
-              {/* <li className="nav-item">
-                <a href="/contacts" className="nav-link smoothScroll">Contacts</a>
-              </li> */}
-
-              {/* <li className="nav-item">
-                <a href="/login" className="nav-link smoothScroll">Login</a>
-              </li> */}
-
-              {/* <li className="nav-item">
-                <a href="/register" className="nav-link smoothScroll">Register</a>
-              </li> */}
-              {/* 
-              <li className="nav-item">
-                <a href="/logout" className="nav-link smoothScroll">Logout</a>
-              </li> */}
-
-
             </ul>
+
+
 
             <ul className="social-icon ml-lg-3">
               <li>
@@ -128,9 +102,10 @@ function Header() {
             </ul>
 
           </div>
-
+          
         </div>
       </nav>
+
 
     </header>
   )

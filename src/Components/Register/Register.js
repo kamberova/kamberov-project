@@ -11,35 +11,36 @@ function Register() {
         e.preventDefault();
 
         let { email, password } = Object.fromEntries(new FormData(e.currentTarget));
-
+        console.log(email, password)
         authService.register(email, password)
             .then(authData => {
                 login(authData);
 
-                navigate('/');
+                navigate('/coaching');
             });
     }
     return (
         <>
-            <div className="membership-form"></div>
+            <div className="membership-form">
 
-            <p>Are you a new member to my page?</p>
+                <p>Are you a new member to my page?</p>
 
-            {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
-            <form onSubmit={registerSubmitHandler} method="post" className="membership-form webform" role="form">
-                <label htmlFor="email-input">E-mail</label>
-                <input type="email" className="form-control" name="email" placeholder="johndoe@gmail.com" id="email" />
+                {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
+                <form onSubmit={registerSubmitHandler} method="POST" className="membership-form webform" role="form">
+                    <label htmlFor="email">E-mail</label>
+                    <input type="email" className="form-control" name="email" placeholder="johndoe@gmail.com" id="email" />
 
-                <label htmlFor="phone-input">Password</label>
-                <input type="tel" className="form-control" name="password" placeholder="yourPassword" required id="password" />
+                    <label htmlFor="password">Password</label>
 
-                <label htmlFor="phone-input">Repeat Password</label>
-                <input type="tel" className="form-control" name="repeatPassword" placeholder="repeatPassword" required id="repeatPassword" />
+                    <input type="password" className="form-control" name="password" placeholder="yourPassword" required id="password" />
 
-                <button type="submit" className="form-control" id="submit-button" name="submit">Create an Account</button>
-            </form>
+                    <label htmlFor="repeatPassword">Repeat Password</label>
 
+                    <input type="password" className="form-control" name="repeatPassword" placeholder="repeatPassword" required id="repeatPassword" />
+                    <button type="submit" className="form-control" id="submit-button" name="submit">Create an Account</button>
+                </form>
 
+            </div>
         </>
 
     )

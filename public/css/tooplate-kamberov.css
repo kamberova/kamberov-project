@@ -361,7 +361,7 @@
     background-position: top;
     background-repeat: no-repeat;
     vertical-align: middle;
-    min-height: 100vh;
+    min-height: 87vh;
     position: relative;
   }
 
@@ -441,14 +441,14 @@
     top: 10px;
   }
 
-  .table .thead-light th,
+  .table .thead-light, th,
   .schedule-table tr td:first-child {
     background: var(--primary-color);
     border: 1px solid #212122;
     color: var(--white-color);
   }
 
-  .schedule-table .thead-light th {
+  .schedule-table .thead-light, th {
     border-bottom: 0;
     text-transform: uppercase;
   }
@@ -458,7 +458,7 @@
     border: 1px solid #212122;
   }
 
-  .table-bordered td {
+  .table-bordered, td {
     padding-bottom: 22px;
   }
 
@@ -569,7 +569,7 @@
 
   .site-footer {
     border-top: 1px solid #efebeb;
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
 
   .site-footer a {

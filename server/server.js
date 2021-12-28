@@ -92,7 +92,7 @@
             let context;
 
             // NOTE: the OPTIONS method results in undefined result and also it never processes plugins - keep this in mind
-            if (method == 'OPTIONS') {
+            if (method === 'OPTIONS') {
                 Object.assign(headers, {
                     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
                     'Access-Control-Allow-Credentials': false,
@@ -118,7 +118,7 @@
             }
 
             res.writeHead(status, headers);
-            if (context != undefined && context.util != undefined && context.util.throttle) {
+            if (context !== undefined && context.util !== undefined && context.util.throttle) {
                 await new Promise(r => setTimeout(r, 500 + Math.random() * 500));
             }
             res.end(result);
@@ -131,9 +131,9 @@
 
             async function handle(context) {
                 const { serviceName, tokens, query, body } = await parseRequest(req);
-                if (serviceName == 'admin') {
+                if (serviceName === 'admin') {
                     return ({ headers, result } = services['admin'](method, tokens, query, body));
-                } else if (serviceName == 'favicon.ico') {
+                } else if (serviceName === 'favicon.ico') {
                     return ({ headers, result } = services['favicon'](method, tokens, query, body));
                 }
 
@@ -175,7 +175,7 @@
         const queryString = url.search.split('?')[1] || '';
         const query = queryString
             .split('&')
-            .filter(s => s != '')
+            .filter(s => s !== '')
             .map(x => x.split('='))
             .reduce((p, [k, v]) => Object.assign(p, { [k]: decodeURIComponent(v) }), {});
         const body = await parseBody(req);
@@ -280,12 +280,12 @@
     }
 
     function matchAndAssignParams(context, name, pattern) {
-        if (pattern == '*') {
+        if (pattern === '*') {
             return true;
-        } else if (pattern[0] == ':') {
+        } else if (pattern[0] === ':') {
             context.params[pattern.slice(1)] = name;
             return true;
-        } else if (name == pattern) {
+        } else if (name === pattern) {
             return true;
         } else {
             return false;
@@ -297,7 +297,7 @@
     function uuid() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
             let r = Math.random() * 16 | 0,
-                v = c == 'x' ? r : (r & 0x3 | 0x8);
+                v = c === 'x' ? r : (r & 0x3 | 0x8);
             return v.toString(16);
         });
     }
@@ -386,7 +386,7 @@
                 if (responseData.hasOwnProperty(token) == false) {
                     return null;
                 }
-                if (i == tokens.length - 1) {
+                if (i === tokens.length - 1) {
                     const body = responseData[token];
                     delete responseData[token];
                     return body;
