@@ -16,7 +16,7 @@ function Register() {
             .then(authData => {
                 login(authData);
 
-                navigate('/coaching');
+                navigate('/');
             });
     }
     return (
@@ -28,7 +28,7 @@ function Register() {
                 {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
                 <form onSubmit={registerSubmitHandler} method="POST" className="membership-form webform" role="form">
                     <label htmlFor="email">E-mail</label>
-                    <input type="email" className="form-control" name="email" placeholder="johndoe@gmail.com" id="email" />
+                    <input type="email" className="form-control" name="email" placeholder="yourEmailHere" id="email" />
 
                     <label htmlFor="password">Password</label>
 

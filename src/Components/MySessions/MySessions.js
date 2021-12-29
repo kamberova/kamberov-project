@@ -9,7 +9,8 @@ import { useAuthContext } from '../../contexts/AuthContext';
 function MySessions() {
 
 
-    const [setSessions] = useState([]);
+
+    const [sessions, setSessions] = useState([]);
     const { user } = useAuthContext();
 
     useEffect(() => {
@@ -17,20 +18,20 @@ function MySessions() {
             .then(sessionsResult => {
                 setSessions(sessionsResult);
             });
-    }, [setSessions, user._id])
+    }, [sessions, setSessions, user._id])
 
     return (
-        <section href="/my-sessions" className="about section" id="about">
+        <section href="/my-sessions" className="about section" id="my-sessions">
             <div className="container">
                 <div className="row">
 
                     <div className="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
                         <h2 className="mb-4" data-aos="fade-up" data-aos-delay="300">Your Booked Sessions</h2>
 
-                        <p data-aos="fade-up" data-aos-delay="400">
-                        {/* <SessionList sessions={sessions} /> */}
-                        </p>
-                 
+                            <ul data-aos="fade-up" data-aos-delay="400">
+                                {/* <SessionList sessions={sessions} /> */}
+                            </ul>
+
 
                     </div>
 
@@ -43,7 +44,7 @@ function MySessions() {
                                 <h3>Radoslav Kamberov</h3>
                                 <span>Your personal trainer</span>
 
-                            
+
                             </div>
                         </div>
                     </div>

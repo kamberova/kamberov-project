@@ -52,6 +52,9 @@ function Header() {
           <a href="/my-sessions" className="nav-link smoothScroll">My Sessions</a>
         </li>
 
+        <li className="nav-item">
+          <a href="/about" className="nav-link smoothScroll">About Me</a>
+        </li>
         
         <li className="nav-item">
           <a href="/contacts" className="nav-link smoothScroll">Contacts</a>
