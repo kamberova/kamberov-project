@@ -11,7 +11,6 @@ import Contacts from "./Components/Contacts/Contacts";
 import Register from "./Components/Register/Register";
 import Login from "./Components/Login/Login";
 import MySessions from "./Components/MySessions/MySessions";
-// import SessionList from "./Components/SessionList/SessionList";
 import Logout from "./Components/Logout";
 import Header from "./Components/Header/Header";
 import Notification from './Components/Common/Notification';
