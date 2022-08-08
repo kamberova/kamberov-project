@@ -25,6 +25,7 @@ function Coaching() {
 
                                 <p className="mt-3">You can book a training upon your needs: personal beginners or advanced training, group training, kids training, or just a sparing partner.</p>
                             </div>
+                            <button>Book now</button>
                         </div>
                     </div>
 
