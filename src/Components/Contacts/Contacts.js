@@ -21,20 +21,20 @@ function Contacts() {
 
             <div className="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12" data-aos="fade-up" data-aos-delay="100">
               <p><i className="fa fa-phone mr-1"></i>
-              <a href="/contacts">+359 888 92 16 92</a>
+                <a href="/contacts">+359 888 92 16 92</a>
               </p>
             </div>
 
             <div className="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12" data-aos="fade-up" data-aos-delay="100">
               <p><i className="fa fa-facebook mr-1"></i>
-              <a href="https://www.facebook.com/kamberov">Facebook page</a>
+                <a href="https://www.facebook.com/kamberov">Facebook page</a>
               </p>
             </div>
 
           </div>
 
           <div className="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
-            <h2 className="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find me</span></h2>
+            <h2 className="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can find me</h2>
 
             <p data-aos="fade-up" data-aos-delay="800"><i className="fa fa-map-marker mr-1"></i> 2, Stockholm Rd, London SE16 3LP, UK</p>
 

@@ -138,6 +138,10 @@
     transition: all 0.3s ease;
   }
 
+  .book-a-session {
+    padding: 0.5px 1px;
+  }
+
   .custom-btn:hover {
     color: var(--primary-color);
   }
@@ -433,7 +437,6 @@
   .schedule-table span,
   .schedule-table small {
     font-size: var(--menu-font-size);
-    text-transform: uppercase;
   }
 
   .schedule-table small {

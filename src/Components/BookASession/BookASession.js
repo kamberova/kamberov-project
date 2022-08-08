@@ -50,9 +50,12 @@ function BookASession() {
                                         </tr>
 
                                         <tr>
+                                            
                                             <td>
-
-                                                <span id="hour" name="hour"><strong id="type" name="type">Personal Trainig</strong>Mon 7:00 am - 9:00 am</span>
+                                                <strong name="type">Personal Trainig</strong>
+                                                <span name="hour">Mon 7:00 am - 9:00 am</span>
+                                                <button className='custom-btn hover focus bg-color book-a-session' >Book now</button>
+                                                {/* <span id="hour" name="hour"><strong id="type" name="type">Personal Trainig</strong>Mon 7:00 am - 9:00 am</span> */}
                                             </td>
                                         </tr>
 
@@ -60,6 +63,7 @@ function BookASession() {
                                             <td>
                                                 <strong name="type">Showcase</strong>
                                                 <span name="hour">Fri 8:00 am - 9:00 am</span>
+                                                <button>Book now</button>
                                             </td>
                                         </tr>
 
@@ -67,6 +71,7 @@ function BookASession() {
                                             <td>
                                                 <strong name="type">Team building session</strong>
                                                 <span name="hour">Tue 11:30 am - 3:30 pm</span>
+                                                <button>Book now</button>
                                             </td>
                                         </tr>
 
@@ -74,6 +79,7 @@ function BookASession() {
                                             <td>
                                                 <strong name="type">Personal Training</strong>
                                                 <span name="hour">Wed 2:00 pm - 7:00 pm</span>
+                                                <button>Book now</button>
                                             </td>
                                         </tr>
                                     </tbody>
