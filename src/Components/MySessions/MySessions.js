@@ -7,7 +7,7 @@ import { useAuthContext } from '../../contexts/AuthContext';
 
 
 function MySessions() {
-
+ 
     const [sessions, setSessions] = useState([]);
     const { user } = useAuthContext();
 
