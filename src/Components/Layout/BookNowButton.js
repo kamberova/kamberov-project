@@ -1,5 +1,6 @@
+import './BookNowButton.css';
 
-const Button = (props) => {
+const BookNowButton = (props) => {
 
 //     const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
 //   const cartCtx = useContext(CartContext);
@@ -44,4 +45,4 @@ return (
 
 };
 
-export default Button;
+export default BookNowButton;

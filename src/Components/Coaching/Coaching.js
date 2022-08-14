@@ -1,3 +1,4 @@
+import BookASessionButton from "../Layout/BookASessionButton";
 
 
 function Coaching() {
@@ -24,8 +25,12 @@ function Coaching() {
                                 <span className="class-price">$50</span>
 
                                 <p className="mt-3">You can book a training upon your needs: personal beginners or advanced training, group training, kids training, or just a sparing partner.</p>
+
+
+                                <BookASessionButton />
+
                             </div>
-                            <button>Book now</button>
+
                         </div>
                     </div>
 
@@ -41,6 +46,9 @@ function Coaching() {
                                 <span className="class-price">$66</span>
 
                                 <p className="mt-3">Upon a request our team manage and lead team buildings for companies/firms.</p>
+
+                                <BookASessionButton />
+
                             </div>
                         </div>
                     </div>
@@ -57,7 +65,12 @@ function Coaching() {
                                 <span className="class-price">$75</span>
 
                                 <p className="mt-3">Two times a week we organise a showcase tournament that you can visit. Be a part of a show performed by top table tennis players in London. Check on the next date on the poster.*</p>
+
+                                <BookASessionButton />
                             </div>
+
+
+
                         </div>
                     </div>
 
