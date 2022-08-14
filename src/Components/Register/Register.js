@@ -10,8 +10,13 @@ function Register() {
     const registerSubmitHandler = (e) => {
         e.preventDefault();
 
-        let { email, password } = Object.fromEntries(new FormData(e.currentTarget));
+        let { email, password, repeatPassword } = Object.fromEntries(new FormData(e.currentTarget));
         console.log(email, password)
+
+        if (password === '' || email === '' || repeatPassword === '') {
+            alert('All fields must be filled!');
+        }
+
         authService.register(email, password)
             .then(authData => {
                 login(authData);

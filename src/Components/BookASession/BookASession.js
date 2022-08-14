@@ -2,7 +2,7 @@
 import { useNavigate } from 'react-router-dom';
 import * as bookService from '../../services/bookService';
 import { useAuthContext } from '../../contexts/AuthContext';
-import Button from '../Layout/Button'
+import Button from '../Layout/Button';
 
 function BookASession() {
 
@@ -24,8 +24,8 @@ function BookASession() {
         }, user.accessToken)
             .then(result => {
                 navigate('/my-sessions');
-            })
-    }
+            });
+    };
 
     return (
 
@@ -93,8 +93,8 @@ function BookASession() {
             </div>
         </section>
 
-    )
+    );
 
-}
+};
 
 export default BookASession;

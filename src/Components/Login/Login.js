@@ -20,7 +20,8 @@ function Login() {
 
         if (password == '' || email == '') {
             alert('All fields must be filled!');
-        }
+        };
+
         console.log(email, password);
 
         authService.login(email, password)
@@ -33,7 +34,7 @@ function Login() {
                 alert(err);
                 console.log(err);
             });
-          
+
     }
 
     return (
