@@ -43,6 +43,7 @@ function MySessions() {
                                 <span>Your personal trainer</span>
 
 
+
                             </div>
                         </div>
                     </div>
@@ -54,3 +55,4 @@ function MySessions() {
 
 }
 export default MySessions;
+
