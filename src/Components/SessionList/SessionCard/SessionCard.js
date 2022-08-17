@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const SessionCard = (
-    { bookSession }) => {
+    bookSession ) => {
     return (
         <li className="">
             <h3>Hour: {bookSession.hour}</h3>
