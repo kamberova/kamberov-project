@@ -3,8 +3,7 @@ import { useState, useEffect } from 'react';
 import * as bookService from '../../services/bookService';
 import { useAuthContext } from '../../contexts/AuthContext';
 
-// import * as SessionList from './SessionList/SessionList';
-
+import SessionList from '../SessionList/SessionList';
 
 function MySessions() {
  
@@ -26,10 +25,9 @@ function MySessions() {
                     <div className="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
                         <h2 className="mb-4" data-aos="fade-up" data-aos-delay="300">Your Booked Sessions</h2>
 
-                            <ul data-aos="fade-up" data-aos-delay="400">
-                                {/* <SessionList sessions={sessions} /> */}
-                            </ul>
-
+                          
+                                <SessionList sessions={sessions} />
+                       
 
                     </div>
 
