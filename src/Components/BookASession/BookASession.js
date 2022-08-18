@@ -18,7 +18,7 @@ function BookASession() {
         let hour = formData.get('hour');
         let price = formData.get('price');
 
-        console.log(hour, type, price);
+        console.log(hour.value, type.value, price.value);
 
         bookService.create({
             type,
