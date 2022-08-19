@@ -590,7 +590,7 @@
                     const [propName, relationTokens] = prop.split('=');
                     const [idSource, collection] = relationTokens.split(':');
                     console.log(`Loading related records from "${collection}" into "${propName}", joined on "_id"="${idSource}"`);
-                    const storageSource = collection == 'users' ? context.protectedStorage : context.storage;
+                    const storageSource = collection === 'users' ? context.protectedStorage : context.storage;
                     responseData = Array.isArray(responseData) ? responseData.map(transform) : transform(responseData);
 
                     function transform(r) {
@@ -1331,10 +1331,8 @@
         },
         sessions: {
 
-        }
-    };
+        },
 
-    var seedData = {
         bookSessions: {
             "ff436770-76c5-40e2-b231-77409eda7a61": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
@@ -1358,6 +1356,11 @@
                  "_createdOn": 1617194295474,
             }
         },
+
+    };
+
+    var seedData = {
+       
         comments: {
 
         }
