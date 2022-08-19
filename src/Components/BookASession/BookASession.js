@@ -18,7 +18,7 @@ function BookASession() {
         let hour = formData.get('hour');
         let price = formData.get('price');
 
-        console.log(hour.value, type.value, price.value);
+        // console.log(hour.value, type.value, price.value);
 
         bookService.create({
             type,
@@ -35,7 +35,7 @@ function BookASession() {
 
     return (
 
-        <section href="book-a-session" className="schedule section" id="book-a-session">
+        <section href="/book-a-session" className="schedule section" id="book-a-session">
             <form id="create-form" onClick={onBookTraining} method="GET">
                 <div className="container">
                     <div className="row">
@@ -59,13 +59,13 @@ function BookASession() {
 
                                         <tr>
                                             <td >
-
-                                                <strong id="name" name="type" value="type">{user.type}</strong>
-                                                <span id="hour" name="hour" value="hour">{user.hour}</span>
-                                                <span id="price" name="price" value="price">{user.price}</span>
-                                                <BookNowButton />
-                                                {/* <button className='custom-btn hover focus bg-color book-a-session' >Book now</button> */}
-
+                                                <div>
+                                                    <strong id="name" name="type" value="type">{user.type}</strong>
+                                                    <span id="hour" name="hour" value="hour">{user.hour}</span>
+                                                    <span id="price" name="price" value="price">{user.price}</span>
+                                                    <BookNowButton />
+                                                    {/* <button className='custom-btn hover focus bg-color book-a-session' >Book now</button> */}
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>

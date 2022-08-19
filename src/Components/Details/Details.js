@@ -23,7 +23,7 @@ const Details = () => {
             .then(likes => {
                 setBooking(state => ({...state, likes}))
             })
-    }, []);
+    }, [bookingId, setBooking]);
 
     const deleteHandler = (e) => {
         e.preventDefault();
@@ -74,10 +74,11 @@ const Details = () => {
         <>
             <ConfirmDialog show={showDeleteDialog} onClose={() => setShowDeleteDialog(false)} onSave={deleteHandler} />
             <section id="details-page" className="details">
-                <div className="book-information">
-                    <h3>Name: {book.name}</h3>
-                    <p className="type">Type: {book.type}</p>
-                    <div className="actions">
+                <div className="">
+                    <h3>Type: {book.type}</h3>
+                    <p className="hour">Hour: {book.hour}</p>
+                    <p className="price">Price: {book.price}</p>
+                    <div className="">
                         {user._id && (user._id == book._ownerId
                             ? ownerButtons
                             : userButtons
@@ -87,10 +88,6 @@ const Details = () => {
                             <span id="total-likes">Likes: {book.likes?.length || 0}</span>
                         </div>
                     </div>
-                </div>
-                <div className="book-description">
-                    <h3>Description:</h3>
-                    <p>{book.description}</p>
                 </div>
             </section>
         </>

@@ -382,6 +382,15 @@ a:focus {
   position: relative;
 }
 
+.no-booked-sessions {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+.no-sessions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .class-info img {
   border-radius: 2px 2px 0 0;
 }
@@ -407,14 +416,14 @@ a:focus {
 }
 
 .moving-price:hover {
- 
-    margin-top: -10px;    
-    width: 4rem;
-    height: 4rem;
-    top: 2rem;
-    right: 2rem;
-    line-height: 4rem;
-    text-align: center;
+
+  margin-top: -10px;
+  width: 4rem;
+  height: 4rem;
+  top: 2rem;
+  right: 2rem;
+  line-height: 4rem;
+  text-align: center;
 }
 
 

@@ -2,16 +2,16 @@ import * as request from './requester';
 
 const baseUrl = 'http://localhost:3030';
 
-export const getAll = () => request.get(`${baseUrl}/data/bookSessions`);
+export const getAll = () => request.get(`${baseUrl}/data/book-a-session`);
 
 export const getMyBooking = (ownerId) => {
     let query = encodeURIComponent(`_ownerId="${ownerId}"`);
 
-    return request.get(`${baseUrl}/data/bookSessions?where=${query}`);
+    return request.get(`${baseUrl}/data/book-a-session?where=${query}`);
 };
 
 export const create = async (bookData, token) => {
-    let response = await fetch(`${baseUrl}/data/bookSessions`, {
+    let response = await fetch(`${baseUrl}/data/book-a-session`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json',
@@ -27,15 +27,15 @@ export const create = async (bookData, token) => {
     return result;
 };
 
-export const update = (bookingId, bookData) => request.put(`${baseUrl}/data/bookSessions/${bookingId}`, bookData);
+export const update = (bookingId, bookData) => request.put(`${baseUrl}/data/book-a-session/${bookingId}`, bookData);
 
 export const getOne = (bookingId, signal) => {
-    return fetch(`${baseUrl}/data/bookSessions/${bookingId}`, { signal })
+    return fetch(`${baseUrl}/data/book-a-session/${bookingId}`, { signal })
         .then(res => res.json())
 };
 
 export const destroy = (bookingId, token) => {
-    return fetch(`${baseUrl}/data/bookSessions/${bookingId}`, {
+    return fetch(`${baseUrl}/data/book-a-session/${bookingId}`, {
         method: 'DELETE',
         headers: {
             'X-Authorization': token
@@ -44,7 +44,7 @@ export const destroy = (bookingId, token) => {
 };
 
 export const like = (bookingId, booking, token) => {
-    return fetch(`${baseUrl}/data/bookSessions/${bookingId}`, {
+    return fetch(`${baseUrl}/data/book-a-session/${bookingId}`, {
         method: 'PUT',
         headers: {
             'content-type': 'application/json',
