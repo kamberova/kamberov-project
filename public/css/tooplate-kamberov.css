@@ -434,9 +434,11 @@ a:focus {
 .schedule {
   background: var(--dark-color);
 }
+
 ul li {
   list-style: none;
 }
+
 div i.fa {
   display: block;
   color: white;

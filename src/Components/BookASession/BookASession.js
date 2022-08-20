@@ -62,8 +62,33 @@ function BookASession(props) {
                                                 <td >
                                                     <ul>
                                                         <li>
-                                                           {props.children}
-                                                            <BookNowButton />
+                                                            <div>
+                                                                <h3
+                                                                    id="name"
+                                                                    name="type"
+                                                                    value="type"
+                                                                //    onClick={(e) => setType(e.target.value)}
+                                                                >
+                                                                    Personal Training
+                                                                </h3>
+                                                                <div
+                                                                    id="hour"
+                                                                    name="hour"
+                                                                    value="hour"
+                                                                // onClick={(e) => setHour(e.target.value)}
+                                                                >
+                                                                    Mon: 7:00am - 9:00am
+                                                                </div>
+                                                                <div
+                                                                    id="price"
+                                                                    name="price"
+                                                                    value="price"
+                                                                >
+                                                                    {/* onClick={(e) => setPrice(e.target.value)}  */}
+                                                                   Price - 50$
+                                                                </div>
+                                                                <BookNowButton />
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                 </td>

@@ -12,6 +12,7 @@ import Register from "./Components/Register/Register";
 import Login from "./Components/Login/Login";
 import MySessions from "./Components/MySessions/MySessions";
 import Details from "./Components/Details/Details";
+// import Edit from './Components/Edit/Edit';
 import Logout from "./Components/Logout";
 import Header from "./Components/Header/Header";
 import Notification from './Components/Common/Notification';
@@ -52,7 +53,8 @@ function App() {
                 <Route path="/login" element={<Login />} />
 
                 <Route path="/my-sessions" element={<PrivateRoute><MySessions /></PrivateRoute>} />
-                <Route path="/details" element={<PrivateRoute><Details /></PrivateRoute>} />
+                <Route path="/details/:bookingId" element={<PrivateRoute><Details /></PrivateRoute>} />
+                {/* <Route path="/edit/:bookingId" element={<PrivateRoute><Edit /></PrivateRoute>} /> */}
 
                 <Route path="/register" element={<Register />} />
 
@@ -69,7 +71,7 @@ function App() {
       </AuthProvider>
     </ErrorBoundary >
   );
-}
+};
 
 
 
