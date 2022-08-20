@@ -40,8 +40,6 @@ function MySessions() {
                                 <h3>Radoslav Kamberov</h3>
                                 <span>Your personal trainer</span>
 
-
-
                             </div>
                         </div>
                     </div>
