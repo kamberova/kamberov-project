@@ -427,12 +427,6 @@ a:focus {
 }
 
 
-/* 
-.bump {
-  cursor: pointer;
-  animation: bump 300ms ease-out;
-} */
-
 /*---------------------------------------
      SCHEDULE             
   -----------------------------------------*/
@@ -441,6 +435,12 @@ a:focus {
   background: var(--dark-color);
 }
 
+div i.fa {
+  display: block;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 .schedule-table {
   display: table;
   border: 0;

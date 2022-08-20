@@ -1335,32 +1335,32 @@
 
         bookSessions: {
             "ff436770-76c5-40e2-b231-77409eda7a61": {
-                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "hour": "Mon 7:00 am - 9:00 am",
-                "price": 'Price - 50$',
-                "type": "Personal Trainig",
-                "_createdOn": 1617194128618,
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                hour: "Mon 7:00 am - 9:00 am",
+                price: 'Price - 50$',
+                type: "Personal Trainig",
+                _createdOn: 1617194128618,
             },
             "1840a313-225c-416a-817a-9954d4609f7c": {
-                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "hour": "Tue 11:30 am - 3:30 pm",
-                "price": 'Price - 66$',
-                "type": "Team building session",
-                "_createdOn": 1617194210928,
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                hour: "Tue 11:30 am - 3:30 pm",
+                price: 'Price - 66$',
+                type: "Team building session",
+                _createdOn: 1617194210928,
             },
             "126777f5-3277-42ad-b874-76d043b069cb": {
-                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
-                "hour": "Fri 8:00 am - 9:00 am",
-                "price": 'Price - 75$',
-                "type": "Showcase",
-                 "_createdOn": 1617194295474,
+                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
+                hour: "Fri 8:00 am - 9:00 am",
+                price: 'Price - 75$',
+                type: "Showcase",
+                _createdOn: 1617194295474,
             }
         },
 
     };
 
     var seedData = {
-       
+
         comments: {
 
         }
@@ -1373,7 +1373,8 @@
             ],
             ".update": false,
             ".delete": false
-        }
+        },
+      
     };
     var settings = {
         identity: identity,
