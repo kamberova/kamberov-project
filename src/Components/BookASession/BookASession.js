@@ -12,13 +12,12 @@ function BookASession(props) {
 
         let formData = new FormData(event.currentTarget.value);
 
-        console.log(event.currentTarget)
 
         let type = formData.get('type');
         let hour = formData.get('hour');
         let price = formData.get('price');
 
-        console.log(event.currentTarget.value);
+        console.log(type, hour, price);
 
         bookService.create({
             type,
@@ -54,6 +53,7 @@ function BookASession(props) {
                             <i className=" fa fa-calendar" data-aos="fade-up" data-aos-delay="200"></i>
                         </div>
                         <section id="create-page" className="create">
+
                             <form id="create-form" onClick={onBookTraining} method="POST">
                                 <div>
                                     <table className="table table-bordered table-responsive schedule-table" data-aos="fade-up" data-aos-delay="300">
@@ -63,30 +63,30 @@ function BookASession(props) {
                                                     <ul>
                                                         <li>
                                                             <div>
-                                                                <h3
+                                                                <strong
                                                                     id="name"
                                                                     name="type"
                                                                     value="type"
                                                                 //    onClick={(e) => setType(e.target.value)}
                                                                 >
-                                                                    Personal Training
-                                                                </h3>
-                                                                <div
+                                                                  
+                                                                </strong>
+                                                                <span
                                                                     id="hour"
                                                                     name="hour"
                                                                     value="hour"
                                                                 // onClick={(e) => setHour(e.target.value)}
                                                                 >
-                                                                    Mon: 7:00am - 9:00am
-                                                                </div>
-                                                                <div
+                                                                   
+                                                                </span>
+                                                                <span
                                                                     id="price"
                                                                     name="price"
                                                                     value="price"
                                                                 >
                                                                     {/* onClick={(e) => setPrice(e.target.value)}  */}
-                                                                   Price - 50$
-                                                                </div>
+                                                                   
+                                                                </span>
                                                                 <BookNowButton />
                                                             </div>
                                                         </li>
