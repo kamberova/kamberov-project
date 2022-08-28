@@ -45,6 +45,10 @@ function Header() {
         </li>
 
         <li className="nav-item">
+          <a href="/positioning-page" className="nav-link smoothScroll">Body Positioning</a>
+        </li>
+
+        <li className="nav-item">
           <a href="/book-a-session" className="nav-link smoothScroll">Book a session</a>
         </li>
 

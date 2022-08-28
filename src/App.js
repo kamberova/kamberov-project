@@ -5,6 +5,7 @@ import { NotificationProvider } from './contexts/NotificationContext'
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
+import PositioningPage from "./Components/PositioningPage/PositioningPage";
 import Coaching from "./Components/Coaching/Coaching";
 import BookASession from "./Components/BookASession/BookASession";
 import Contacts from "./Components/Contacts/Contacts";
@@ -41,6 +42,7 @@ function App() {
                 <Route path="/" element={<Home />} />
 
                 <Route path="/about" element={<About />} />
+                <Route path="/positioning-page" element={<PositioningPage />} />
 
                 <Route path="/coaching" element={<Coaching />} />
 
