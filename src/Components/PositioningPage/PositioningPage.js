@@ -29,15 +29,10 @@ function PositioningPage() {
         <div>
             <section className="class section" id="positioning">
 
-
                 <div className="container">
 
-
-                    <div className="row" ></div>
-
-
                     <div className="" data-aos="fade-up" data-aos-delay="200">
-                        <div className="class-thumb">
+                      
 
                             <h2 className="text-center" data-aos="fade-up" data-aos-delay="200">Your body position says it all!</h2>
 
@@ -45,7 +40,7 @@ function PositioningPage() {
 
                             </div>
 
-                        </div>
+                       
                     </div>
 
                 </div>
