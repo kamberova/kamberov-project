@@ -386,6 +386,7 @@ a:focus {
   color: var(--primary-color);
   font-weight: 400;
 }
+
 .no-sessions {
   margin-top: 2rem;
   text-align: center;
@@ -426,6 +427,19 @@ a:focus {
   text-align: center;
 }
 
+/*---------------------------------------
+     POSITIONING PAGE           
+  -----------------------------------------*/
+
+.positioning {
+  background-image: url('../images/class/body-positioning.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 77vh;
+  position: relative;
+  
+}
 
 /*---------------------------------------
      SCHEDULE             
@@ -445,6 +459,7 @@ div i.fa {
   text-align: center;
   margin-bottom: 1rem;
 }
+
 .schedule-table {
   display: table;
   border: 0;

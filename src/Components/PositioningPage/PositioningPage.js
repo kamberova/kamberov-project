@@ -1,20 +1,46 @@
-import './PositioningPage.css';
+// import './PositioningPage.css';
 
 function PositioningPage() {
 
     return (
 
-        <section className="class section" id="coaching">
-            <div className="container">
-                <div className="row">
+        // <section href="/positioning-page" className="class section" id="positioning-page">
+        //     <div className="container">
+        //         <div className="row">
 
-                    <div className="col-lg-12 col-12 text-center mb-5">
-                        <h2 data-aos="fade-up" data-aos-delay="200">Your body position says it all!</h2>
-                    </div>
+        //             <div className="col-lg-12 col-12 text-center mb-5">
+        //                 <h2 data-aos="fade-up" data-aos-delay="200">Your body position says it all!</h2>
+        //             </div>
 
-                    <div className="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+        //             <div className="positioning col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+        //                 <div className="class-thumb">
+
+        //                     <div className="">
+        //                         <p>This is the positioning Page</p>
+
+        //                     </div>
+
+        //                 </div>
+        //             </div>
+
+        //         </div>
+        //     </div>
+        // </section>
+        <div>
+            <section className="class section" id="positioning">
+
+
+                <div className="container">
+
+
+                    <div className="row" ></div>
+
+
+                    <div className="" data-aos="fade-up" data-aos-delay="200">
                         <div className="class-thumb">
-                            
+
+                            <h2 className="text-center" data-aos="fade-up" data-aos-delay="200">Your body position says it all!</h2>
+
                             <div className="positioning">
 
                             </div>
@@ -23,8 +49,11 @@ function PositioningPage() {
                     </div>
 
                 </div>
-            </div>
-        </section>
+
+            </section>
+
+
+        </div>
 
     )
 }
