@@ -36,7 +36,7 @@ function Home() {
 
                                 <h1 className="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your table tennis skills with me!</h1>
 
-                                <a href="/positioning-page" className="text-primary-color" data-aos="fade-up" data-aos-delay="600">Explore your body positioning with me</a>
+                                <a href="/positioning-page" className="text-primary-color" data-aos="fade-up" data-aos-delay="600">Learn how to improve your body position!</a>
                             </div>
                         </div>
 
