@@ -45,6 +45,10 @@ function Header() {
       <ul className="navbar-nav ml-lg-auto">
 
         <li className="nav-item">
+          <a href="/positioning-page" className="nav-link smoothScroll">Body Position</a>
+        </li>
+
+        <li className="nav-item">
           <a href="/coaching" className="nav-link smoothScroll">Coaching</a>
         </li>
 
@@ -59,7 +63,7 @@ function Header() {
         <li className="nav-item">
           <a href="/about" className="nav-link smoothScroll">About Me</a>
         </li>
-        
+
         <li className="nav-item">
           <a href="/contacts" className="nav-link smoothScroll">Contacts</a>
         </li>
@@ -109,7 +113,7 @@ function Header() {
             </ul>
 
           </div>
-          
+
         </div>
       </nav>
 
